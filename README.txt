@@ -1,3 +1,5 @@
+![prototype](prototype.png)
+
 This file serves as documentation for what I did on my project, and how you might go about replicating it. It will also explain the other materials uploaded in this folder.
 
 There are two videos, two zipped folders, and one powerpoint file:
