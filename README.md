@@ -34,12 +34,14 @@ To do this first start by making a virtual environment for Python 3.9.0. You can
 Once you get to step two (Installing PyCoral library) however, pause because the Linux code it gives you will most likely not work. You will have to download the whl's directly from https://github.com/google-coral/pycoral/releases. and for both the TF-Lite runtime and the pycoral runtime. This depends on your python version and you Raspi architecture. So for me it was:
 
 `wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/tflite_runtime-2.5.0.post1-cp39-cp39-linux_aarch64.whl`
+
 `wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/pycoral-2.0.0-cp39-cp39-linux_aarch64.whl`
 
 The pip install:
 
-pip install tflite_runtime-2.5.0.post1-cp39-cp39-linux_aarch64.whl
-pip install pycoral-2.0.0-cp39-cp39-linux_aarch64.whl
+`pip install tflite_runtime-2.5.0.post1-cp39-cp39-linux_aarch64.whl`
+
+`pip install pycoral-2.0.0-cp39-cp39-linux_aarch64.whl`
 
 Make sure all of that was done in the virtual environment you set up. 
 
@@ -55,16 +57,17 @@ But before you run check the .sh file. Line 8 is the line that actually runs the
 
 When that is set you're all set to run. Make sure you are in your virtual environment and the right directory:
 
-source myenv/bin/activate
-cd coral/pycoral
+`source myenv/bin/activate`
+
+`cd coral/pycoral`
 
 Turn the .sh file into an executable:
 
-chmod +x continuous_detection.sh
+`chmod +x continuous_detection.sh`
 
 And run the executable:
 
-./continuous_detection.sh
+`./continuous_detection.sh`
 
 
 And thats it! The program should start looping/running and you can hit Ctrl+C at any time to interrupt it. Happy Detecting!
