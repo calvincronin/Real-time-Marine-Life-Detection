@@ -33,8 +33,8 @@ To do this first start by making a virtual environment for Python 3.9.0. You can
 
 Once you get to step two (Installing PyCoral library) however, pause because the Linux code it gives you will most likely not work. You will have to download the whl's directly from https://github.com/google-coral/pycoral/releases. and for both the TF-Lite runtime and the pycoral runtime. This depends on your python version and you Raspi architecture. So for me it was:
 
-wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/tflite_runtime-2.5.0.post1-cp39-cp39-linux_aarch64.whl
-wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/pycoral-2.0.0-cp39-cp39-linux_aarch64.whl
+`wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/tflite_runtime-2.5.0.post1-cp39-cp39-linux_aarch64.whl`
+`wget https://github.com/google-coral/pycoral/releases/download/v2.0.0/pycoral-2.0.0-cp39-cp39-linux_aarch64.whl`
 
 The pip install:
 
